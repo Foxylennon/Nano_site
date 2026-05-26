@@ -1,12 +1,16 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Button } from '@mui/material';
+import { useState } from 'react';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText } from '../../styles/banner';
-import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
-import img2 from "../../assets/img/Nano.png"
+import { TitleStyles } from '../../styles/contentBoxes';
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
+import ReactMarkdown from 'react-markdown';
+import { tutorialsData } from '../../tutos';
 
 export default function Wiki() {
+  const [selectedItem, setSelectedItem] = useState(tutorialsData[0].items[0]);
+
   return (
     <Container maxWidth="false" disableGutters sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       
@@ -64,44 +68,139 @@ export default function Wiki() {
         </Box>  
       </Box>
 
-      {/* Content Section */}
+      {/* Content with Sidebar */}
       <Box sx={{
         py: 4,
         px: { xs: 2, sm: 4, md: 6 },
-        display: "flex",
-        justifyContent: "flex-end",
         bgcolor: 'white',
         position: 'relative',
         zIndex: 1,
-        flex: 1
+        flex: 1,
+        display: 'flex',
+        gap: 3
       }}>
-        <Box sx={{ flex: 1 }}></Box>
-
+        
+        {/* Sidebar */}
         <Box sx={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-start",
+          width: { xs: '100%', md: '280px' },
+          flexShrink: 0,
+          maxHeight: 'calc(100vh - 400px)',
+          overflowY: 'auto',
+          borderRight: { xs: 'none', md: '2px solid #ddd' },
+          paddingRight: { xs: 0, md: 2 }
         }}>
-          <Typography sx={TitleStyles.mainTitle}>
-            WIKI
-          </Typography>
-
-          <Typography sx={{ ...BodyTextStyles.defaultText, mt: 2 }}>
-            Explore the complete knowledge base of Nano.
-          </Typography>
-
-          <Typography sx={{ ...BodyTextStyles.descriptionText, mt: 3 }}>
-            Coming soon! Our comprehensive Wiki will contain detailed information about the game world, characters, enemies, weapons, and gameplay mechanics. Stay tuned for more information!
-          </Typography>
+          {tutorialsData.map((category, catIndex) => (
+            <Box key={catIndex} sx={{ marginBottom: 3 }}>
+              <Box sx={{ ...TitleStyles.sectionTitle, fontSize: '0.95rem', marginBottom: 1.5 }}>
+                {category.category}
+              </Box>
+              
+              <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+                {category.items.map((item) => (
+                  <Button
+                    key={item.id}
+                    onClick={() => setSelectedItem(item)}
+                    sx={{
+                      justifyContent: 'flex-start',
+                      textAlign: 'left',
+                      padding: '10px 12px',
+                      borderRadius: '6px',
+                      color: selectedItem.id === item.id ? 'white' : 'black',
+                      backgroundColor: selectedItem.id === item.id ? Colors.primary : '#f0f0f0',
+                      fontFamily: 'PixelOperator',
+                      fontSize: '0.85rem',
+                      textTransform: 'none',
+                      '&:hover': {
+                        backgroundColor: selectedItem.id === item.id ? Colors.primary : '#e0e0e0'
+                      },
+                      border: selectedItem.id === item.id ? `2px solid ${Colors.primary}` : '2px solid transparent'
+                    }}
+                  >
+                    {item.title}
+                  </Button>
+                ))}
+              </Box>
+            </Box>
+          ))}
         </Box>
 
-        <Box sx={{ flex: 2 }}>
-          <img src={img2} style={{
-            height: '80%',
-            width: 'auto',
-            maxHeight: '300px'
-          }} alt="Nano Game Preview"/>
+        {/* Content Area */}
+        <Box sx={{
+          flex: 1,
+          minHeight: 'calc(100vh - 400px)',
+          overflowY: 'auto',
+          paddingLeft: { xs: 0, md: 2 }
+        }}>
+          {selectedItem && (
+            <Box sx={{
+              '& h1, & h2, & h3': {
+                fontFamily: 'PixelGamer',
+                marginTop: 2,
+                marginBottom: 1,
+                color: Colors.primary
+              },
+              '& h1': {
+                fontSize: '2rem'
+              },
+              '& h2': {
+                fontSize: '1.5rem'
+              },
+              '& h3': {
+                fontSize: '1.2rem'
+              },
+              '& p': {
+                fontFamily: 'PixelOperator',
+                lineHeight: 1.8,
+                marginBottom: 1
+              },
+              '& ul, & ol': {
+                fontFamily: 'PixelOperator',
+                marginLeft: 2,
+                marginBottom: 1
+              },
+              '& li': {
+                marginBottom: 0.5
+              },
+              '& code': {
+                backgroundColor: '#f4f4f4',
+                padding: '2px 6px',
+                borderRadius: '4px',
+                fontFamily: 'monospace',
+                fontSize: '0.9em'
+              },
+              '& pre': {
+                backgroundColor: '#2d2d2d',
+                color: '#f8f8f2',
+                padding: '15px',
+                borderRadius: '8px',
+                overflowX: 'auto',
+                marginBottom: 2
+              },
+              '& blockquote': {
+                borderLeft: `4px solid ${Colors.primary}`,
+                paddingLeft: 2,
+                marginLeft: 0,
+                color: '#666'
+              },
+              '& table': {
+                width: '100%',
+                borderCollapse: 'collapse',
+                marginBottom: 2
+              },
+              '& th, & td': {
+                border: '1px solid #ddd',
+                padding: '10px',
+                textAlign: 'left',
+                fontFamily: 'PixelOperator'
+              },
+              '& th': {
+                backgroundColor: '#f4f4f4',
+                fontWeight: 'bold'
+              }
+            }}>
+              <ReactMarkdown>{selectedItem.content}</ReactMarkdown>
+            </Box>
+          )}
         </Box>
       </Box>
 
