@@ -92,6 +92,9 @@ export default function Download() {
           zIndex: 1
         }}>
           <Button
+            component="a"
+            href="/ProjetS1S2/ProjetS1S2.exe"
+            download="ProjetS1S2.exe"
             sx={{
               fontFamily: 'Pixelcraft',
               fontSize: '1.2rem',
