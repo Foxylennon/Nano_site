@@ -4,7 +4,10 @@ import { useState } from 'react';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText } from '../../styles/banner';
 import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
-import img2 from "../../assets/img/Nano.png"
+import img0 from "../../assets/img/Nano_moves.png"
+import img1 from "../../assets/img/screens/gameplay1.png"
+import img2 from "../../assets/img/screens/gameplay2.png"
+import img3 from "../../assets/img/screens/gameplay3.png"
 import logo from "../../assets/img/logo.png"
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
@@ -14,7 +17,7 @@ export default function Content() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   // Galerie d'images (placeholder - remplacer par images réelles du gameplay)
-  const galleryImages = [img2, img2, img2];
+  const galleryImages = [img1, img2, img3];
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
@@ -157,7 +160,7 @@ export default function Content() {
         </Box>
 
         <Box sx={{ flex: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img src={img2} style={{ 
+          <img src={img0} style={{ 
             height: '80%',
             width: 'auto',
             maxHeight: '300px'
@@ -166,7 +169,7 @@ export default function Content() {
       </Box>
 
       {/* Gallery Section */}
-      <Box display='flex' alignItems='center' width='100%' minHeight='50vh' bgcolor={Colors.primary} sx={{
+      <Box display='flex' alignItems='center' width='100%' minHeight='70vh' bgcolor={Colors.primary} sx={{
         position: 'relative',
         justifyContent: 'space-between',
         px: 4,
@@ -227,9 +230,9 @@ export default function Content() {
           gap: 2
         }}>
           <Box sx={{
-            height: '300px',
+            height: '520px',
             width: '100%',
-            maxWidth: '500px',
+            maxWidth: '800px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -242,7 +245,7 @@ export default function Content() {
               style={{ 
                 height: 'auto',
                 width: '90%',
-                maxHeight: '280px'
+                maxHeight: '500px'
               }}
               alt={`Gameplay ${currentImageIndex + 1}`}
             />

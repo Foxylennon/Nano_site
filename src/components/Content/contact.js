@@ -2,15 +2,15 @@ import { Box, Container, Typography, Button } from '@mui/material';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText } from '../../styles/banner';
 import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
-import img2 from "../../assets/img/Nano.png"
+import img2 from "../../assets/img/Nano_moves.png"
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
 
 export default function Contact() {
   const contacts = [
-    { name: 'Jean Dupont', email: 'jean.dupont@chromo-team.fr', role: 'Project Lead' },
-    { name: 'Marie Martin', email: 'marie.martin@chromo-team.fr', role: 'Lead Developer' },
-    { name: 'Pierre Moreau', email: 'pierre.moreau@chromo-team.fr', role: 'Game Designer' }
+    { name: 'Diana Nguyen', email: 'diana.nguyen@epita.fr', role: 'Project Lead' },
+    { name: 'Dante Zanon', email: 'dante.zanon@epita.fr', role: 'Game Developer' },
+    { name: 'Lucas Isambert', email: 'lucas.isambert@epita.fr', role: 'Sound Designer' }
   ];
 
   const copyEmail = (email) => {

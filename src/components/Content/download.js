@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText } from '../../styles/banner';
 import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
-import img2 from "../../assets/img/Nano.png"
+import img2 from "../../assets/img/concept_travaux/chirurgien_bg.png"
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
 

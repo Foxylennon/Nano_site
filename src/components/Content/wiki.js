@@ -46,7 +46,7 @@ export default function Wiki() {
           }
         }}>
         <BannerContent sx={{ position: 'relative', zIndex: 2 }}>
-          <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>
+          <BannerText>Everything to know about Nano</BannerText>
         </BannerContent>
         <Box
           component="svg"

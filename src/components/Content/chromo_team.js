@@ -19,22 +19,26 @@ import playerIdle from '../../assets/img/concept_travaux/player-idle.png';
 import playerWalk from '../../assets/img/concept_travaux/player-walk.png';
 import rapport from '../../assets/img/concept_travaux/rapport_mars.png';
 import tumeur from '../../assets/img/concept_travaux/tumeur.png';
+import travaux from '../../assets/img/concept_travaux/travaux.png';
+import modeltumeur from '../../assets/img/concept_travaux/3d-tumeur.png';
+import modelbacterie from '../../assets/img/concept_travaux/3d-bacterie.png';
+import modelvirus from '../../assets/img/concept_travaux/3d-virus.png';
+import modelcaillot from '../../assets/img/concept_travaux/3d-caillot.png';
 
 const resources = [
-  { type: 'Hébergement site web', tools: 'GitHub Pages, Vercel' },
-  { type: 'Environnement de développement', tools: 'React, Node.js, npm, VS Code' },
-  { type: 'Illustrations', tools: 'Aseprite, Krita, Photoshop' },
-  { type: 'Modélisations 3D', tools: 'Blender, Unity' },
-  { type: 'Production audio', tools: 'Audacity, FL Studio' },
-  { type: 'Documentation et rédaction', tools: 'Markdown, GitHub Wiki' },
-  { type: 'Contrôle de version', tools: 'Git, GitHub' }
+  { type: 'Hébergement site web', tools: 'GitHub Pages' },
+  { type: 'Environnement de développement', tools: 'React, Node.js, npm, VS Code, PyCharm' },
+  { type: 'Illustrations', tools: 'Ibis Paint X' },
+  { type: 'Modélisations et rendus 3D', tools: 'Blender, ezgif' },
+  { type: 'Production audio', tools: 'FL Studio' },
+  { type: 'Documentation et rédaction', tools: 'Markdown, Microsoft Word, LibreOffice Writer' },
 ];
 
 const galleryImages = [
   bannerBeta, bannerGamma, conceptChrom, boss,
   carteMentale, chirurgienBg, mobsEtChirurgiens, playerAtk,
   playerDash, playerIdle, playerWalk, rapport,
-  tumeur
+  tumeur, travaux, modeltumeur, modelbacterie, modelvirus, modelcaillot
 ];
 
 export default function Credits() {
@@ -107,7 +111,12 @@ export default function Credits() {
           About Chromo Team
         </Typography>
         <Typography sx={{ ...BodyTextStyles.descriptionText }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          The Chromo team is a team of 4 students at the Paris-Villejuif EPITA campus. Its members are :<br />
+          - Dante Zanon<br />
+          - Diana Nguyen<br />
+          - Lucas Isambert<br />
+          - Saad Ichkarran<br />
+          <br /><br />
         </Typography>
       </Box>
 
@@ -123,7 +132,32 @@ export default function Credits() {
           The Original Idea
         </Typography>
         <Typography sx={{ ...BodyTextStyles.descriptionText }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          
+          We were looking for an original and easy-to-implement idea before the deadline. With that in mind, I came up with a chromosome survival game called "Chrom."<br />
+          <br />
+          In this concept, the game would be divided into two main modes:<br />
+          <br />
+          • Survival Mode<br />
+          ◦ The chromosome(s) continuously run to the right of the screen to progress while being chased by tumors from the left. The goal is to run as long as possible while avoiding collisions or being caught by a tumor.<br />
+          • Boss Battle<br />
+          ◦ The chromosome(s) travel to different boss arenas (organs) via "genetic rails." Players must collect as many bonuses as possible along the way before facing a boss.<br />
+          <br />
+          The mechanics shared by both modes are:<br />
+          <br />
+          • Game over when the player dies<br />
+          • The only attack from the chromosome, a kick<br />
+          • The random appearance of tumors<br />
+          • The appearance of genetic rails<br />
+          <br />
+
+          We did, however, incorporate some ideas from this concept into the current project:<br />
+          <br />
+          • the character Chrom, now a merchant in "Nano"<br />
+          • the game's monsters<br />
+          • the player's "bacteriophage" weapon<br />
+          • the combat mode, where the playable characters are now surgeons<br />
+          • the game's ending when the player dies<br />
+
         </Typography>
       </Box>
 
