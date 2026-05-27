@@ -2,7 +2,7 @@ import { Box, Container, Typography, Button } from '@mui/material';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText } from '../../styles/banner';
 import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
-import img2 from "../../assets/img/Nano_moves.png"
+import img2 from "../../assets/img/chromo_team/equipe-s2.png"
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
 
@@ -94,7 +94,7 @@ export default function Contact() {
           <img src={img2} style={{
             height: '80%',
             width: 'auto',
-            maxHeight: '300px'
+            maxHeight: '600px'
           }} alt="Nano Game Preview"/>
         </Box>
       </Box>

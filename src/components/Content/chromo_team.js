@@ -4,7 +4,7 @@ import { BannerContent, BannerText } from '../../styles/banner';
 import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
-import team from '../../assets/img/chromo_team/equipe-s2.png';
+import team from '../../assets/img/chromo_team/equipe-s1.png';
 
 // Import images from concept_travaux
 import bannerBeta from '../../assets/img/concept_travaux/banner-beta.png';
