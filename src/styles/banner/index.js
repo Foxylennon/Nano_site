@@ -34,7 +34,7 @@ export const BannerTitle = styled(Typography)(() => ({
     marginBottom: '1rem',
     color: Colors.secondary,
     fontWeight: 800,
-    fontFamily: 'Impact, sans-serif',
+    fontFamily: 'Pixelcraft, sans-serif',
     WebkitTextStroke: '1px black' ,
     textAlign: 'center',
 
@@ -47,7 +47,7 @@ export const BannerText = styled(Typography)(() => ({
     marginBottom: '2rem',
     color: Colors.secondary,
     fontWeight: 600,
-    fontFamily: 'Impact, sans-serif',
+    fontFamily: 'Pixelcraft, sans-serif',
    
     textAlign: 'center',
 

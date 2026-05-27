@@ -65,7 +65,7 @@ export default function Content() {
             my: 3, 
             color: "white", 
             display: "block",
-            fontFamily: 'PixelGamer',
+            fontFamily: 'Pixelcraft',
             border: '4px solid white',
             position: 'relative',
             zIndex: 1,
@@ -144,7 +144,7 @@ export default function Content() {
               my: 3, 
               color: "black", 
               display: "block",
-              fontFamily: 'PixelGamer',
+              fontFamily: 'Pixelcraft',
               border: '4px solid black',
               padding: '10px 20px',
               '&:hover': {
@@ -203,7 +203,7 @@ export default function Content() {
           sx={{
             color: 'white',
             fontSize: '3rem',
-            fontFamily: 'PixelGamer',
+            fontFamily: 'Pixelcraft',
             position: 'relative',
             zIndex: 2,
             minWidth: 'auto',
@@ -263,7 +263,7 @@ export default function Content() {
           sx={{
             color: 'white',
             fontSize: '3rem',
-            fontFamily: 'PixelGamer',
+            fontFamily: 'Pixelcraft',
             position: 'relative',
             zIndex: 2,
             minWidth: 'auto',
@@ -305,7 +305,7 @@ export default function Content() {
           <Button
             onClick={() => navigate('/tutorials')}
             sx={{
-              fontFamily: 'PixelGamer',
+              fontFamily: 'Pixelcraft',
               border: '3px solid black',
               color: 'black',
               padding: '10px 20px',
@@ -319,7 +319,7 @@ export default function Content() {
           <Button
             onClick={() => navigate('/wiki')}
             sx={{
-              fontFamily: 'PixelGamer',
+              fontFamily: 'Pixelcraft',
               border: '3px solid black',
               color: 'black',
               padding: '10px 20px',
@@ -333,7 +333,7 @@ export default function Content() {
           <Button
             onClick={() => navigate('/chromo_team')}
             sx={{
-              fontFamily: 'PixelGamer',
+              fontFamily: 'Pixelcraft',
               border: '3px solid black',
               color: 'black',
               padding: '10px 20px',

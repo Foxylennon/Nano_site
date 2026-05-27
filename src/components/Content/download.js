@@ -93,7 +93,7 @@ export default function Download() {
         }}>
           <Button
             sx={{
-              fontFamily: 'PixelGamer',
+              fontFamily: 'Pixelcraft',
               fontSize: '1.2rem',
               padding: '15px 30px',
               border: '4px solid black',
@@ -173,7 +173,7 @@ export default function Download() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   borderRadius: '50%',
-                  fontFamily: 'PixelGamer',
+                  fontFamily: 'Pixelcraft',
                   fontSize: '1.5rem',
                   fontWeight: 'bold'
                 }}
@@ -218,7 +218,7 @@ export default function Download() {
         <Button
           onClick={() => navigate('/contact')}
           sx={{
-            fontFamily: 'PixelGamer',
+            fontFamily: 'Pixelcraft',
             border: '3px solid black',
             color: 'black',
             padding: '10px 20px',

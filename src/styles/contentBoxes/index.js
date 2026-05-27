@@ -39,14 +39,14 @@ export const TitleStyles = {
   mainTitle: {
     fontSize: '2rem',
     fontWeight: 'bold',
-    fontFamily: 'PixelGamer',
+    fontFamily: 'Pixelcraft',
     color: 'black'
   },
 
   sectionTitle: {
     fontSize: '1.5rem',
     fontWeight: 'bold',
-    fontFamily: 'PixelGamer',
+    fontFamily: 'Pixelcraft',
     color: 'black'
   }
 };
@@ -55,14 +55,14 @@ export const TitleStyles = {
 export const BodyTextStyles = {
   defaultText: {
     fontFamily: 'PixelOperator',
-    fontSize: '1rem',
+    fontSize: '1.2rem',
     color: 'black',
     lineHeight: 1.6
   },
 
   descriptionText: {
     fontFamily: 'PixelOperator',
-    fontSize: '0.95rem',
+    fontSize: '1.1rem',
     color: '#333',
     lineHeight: 1.8
   }

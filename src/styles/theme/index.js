@@ -22,27 +22,27 @@ const theme = createTheme({
     typography: {
         fontFamily: "'PixelOperator', sans-serif",
         h1: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
             fontWeight: 700,
         },
         h2: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
             fontWeight: 700,
         },
         h3: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
             fontWeight: 700,
         },
         h4: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
             fontWeight: 700,
         },
         h5: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
             fontWeight: 700,
         },
         h6: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
             fontWeight: 700,
         },
         body1: {
@@ -52,7 +52,7 @@ const theme = createTheme({
             fontFamily: "'PixelOperator', sans-serif",
         },
         button: {
-            fontFamily: "'PixelGamer', sans-serif",
+            fontFamily: "'Pixelcraft', sans-serif",
         },
     }
 });

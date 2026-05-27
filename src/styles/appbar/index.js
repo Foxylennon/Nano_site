@@ -4,7 +4,7 @@ import { Colors } from "../theme";
 export const AppbarHeader = styled(Typography)(() => ({
 
     mr: 2,
-    fontFamily: 'PixelGamer',
+    fontFamily: 'Pixelcraft',
     fontWeight: 1000,
     letterSpacing: '.3rem',
     color: Colors.secondary,

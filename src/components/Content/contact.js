@@ -163,7 +163,7 @@ export default function Contact() {
               <Button
                 onClick={() => copyEmail(contact.email)}
                 sx={{
-                  fontFamily: 'PixelGamer',
+                  fontFamily: 'Pixelcraft',
                   border: '2px solid black',
                   color: 'black',
                   padding: '8px 16px',
