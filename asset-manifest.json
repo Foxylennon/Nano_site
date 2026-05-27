@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nano_site/static/css/main.85daf5a0.css",
-    "main.js": "/Nano_site/static/js/main.d45b3666.js",
+    "main.js": "/Nano_site/static/js/main.6fd52991.js",
     "static/js/453.5e90af72.chunk.js": "/Nano_site/static/js/453.5e90af72.chunk.js",
     "static/media/banner.jpg": "/Nano_site/static/media/banner.eee65f834a56f504a3c7.jpg",
     "static/media/logo.png": "/Nano_site/static/media/logo.66f65e44b9f7584b6ec1.png",
@@ -18,6 +18,7 @@
     "static/media/banner-gamma.png": "/Nano_site/static/media/banner-gamma.47aa1df28d60f22d8e66.png",
     "static/media/gameplay2.png": "/Nano_site/static/media/gameplay2.c414548b28cdf64460c4.png",
     "static/media/3d-tumeur.png": "/Nano_site/static/media/3d-tumeur.a0eade4b13c3e88410ad.png",
+    "static/media/equipe-s1.png": "/Nano_site/static/media/equipe-s1.f155fd873e230322ec1c.png",
     "static/media/3d-bacterie.png": "/Nano_site/static/media/3d-bacterie.d03c73db0b40ed9ae556.png",
     "static/media/tumeur.png": "/Nano_site/static/media/tumeur.2ac6597c55fad482cce1.png",
     "static/media/boss.png": "/Nano_site/static/media/boss.45852929deda487b42df.png",
@@ -34,11 +35,11 @@
     "static/media/Pixelcraft.ttf": "/Nano_site/static/media/Pixelcraft.a3446979c7689dc5414d.ttf",
     "index.html": "/Nano_site/index.html",
     "main.85daf5a0.css.map": "/Nano_site/static/css/main.85daf5a0.css.map",
-    "main.d45b3666.js.map": "/Nano_site/static/js/main.d45b3666.js.map",
+    "main.6fd52991.js.map": "/Nano_site/static/js/main.6fd52991.js.map",
     "453.5e90af72.chunk.js.map": "/Nano_site/static/js/453.5e90af72.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85daf5a0.css",
-    "static/js/main.d45b3666.js"
+    "static/js/main.6fd52991.js"
   ]
 }
