@@ -1,11 +1,10 @@
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Colors } from "../theme";
-import "@fontsource/outfit";
 
 export const AppbarHeader = styled(Typography)(() => ({
 
     mr: 2,
-    fontFamily: 'outfit',
+    fontFamily: 'PixelGamer',
     fontWeight: 1000,
     letterSpacing: '.3rem',
     color: Colors.secondary,

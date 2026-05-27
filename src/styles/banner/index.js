@@ -7,10 +7,13 @@ import "../../assets/fonts/STREZY BREAK REGULAR.otf";
 
 export const BannerContainer = styled(Box)(() => ({
 
-    display: 'flex',
+    position: 'fixed',
+    top: '84px',
+    left: 0,
     width: '100%',
-    height: 'calc(100vh - 84px)', //84px = la hauteur réelle de AppBar
-    backgroundColor: Colors.dark,
+    height: 'calc(100vh - 84px)',
+    zIndex: 0,
+    pointerEvents: 'none',
 
 }));
 

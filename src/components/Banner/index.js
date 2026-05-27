@@ -1,18 +1,10 @@
-import { Box, Container, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { BannerContainer, BannerContent, BannerTitle, BannerImage } from "../../styles/banner";
-import travaux from '../../assets/banner.jpg';
-import { Colors } from "../../styles/theme";
+import { Box } from "@mui/material";
+import { BannerContainer } from "../../styles/banner";
+import travaux from '../../assets/img/banner.jpg';
 
 export default function Banner(){
-
-    const theme = useTheme();
-
-
-
     return(
-
         <BannerContainer>
-            
             <Box
                 sx={{
                     backgroundImage: `url(${travaux})`,
@@ -20,18 +12,12 @@ export default function Banner(){
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                     width: '100%',
-                    minheight: '400px', // Use height instead of minHeight temporarily
+                    minheight: '400px',
                     position: 'relative',
                     backgroundAttachment: 'fixed',
-
                 }}
             >
             </Box>
-
-            
         </BannerContainer>
-
-
-        
     );
 };
