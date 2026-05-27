@@ -6,7 +6,7 @@ import { TitleStyles } from '../../styles/contentBoxes';
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
 import ReactMarkdown from 'react-markdown';
-import { tutorialsData } from '../../tutos';
+import { tutorialsData } from '../../wiki';
 
 export default function Wiki() {
   const [selectedItem, setSelectedItem] = useState(tutorialsData[0].items[0]);

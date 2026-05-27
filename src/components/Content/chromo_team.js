@@ -4,6 +4,7 @@ import { BannerContent, BannerText } from '../../styles/banner';
 import { TitleStyles, BodyTextStyles } from '../../styles/contentBoxes';
 import banner from "../../assets/img/banner.jpg"
 import Footer from '../Footer';
+import team from '../../assets/img/chromo_team/equipe-s2.png';
 
 // Import images from concept_travaux
 import bannerBeta from '../../assets/img/concept_travaux/banner-beta.png';
@@ -101,23 +102,35 @@ export default function Credits() {
 
       {/* Box 1: About Chromo Team */}
       <Box sx={{
-        py: 4,
+        py: 4, 
         px: { xs: 2, sm: 4, md: 6 },
+        display: "flex", 
+        justifyContent: "flex-end",
         bgcolor: 'white',
         position: 'relative',
-        zIndex: 1
+        zIndex: 1,
+        flex: 1
       }}>
-        <Typography sx={{ ...TitleStyles.sectionTitle, marginBottom: 2 }}>
-          About Chromo Team
-        </Typography>
-        <Typography sx={{ ...BodyTextStyles.descriptionText }}>
-          The Chromo team is a team of 4 students at the Paris-Villejuif EPITA campus. Its members are :<br />
-          - Dante Zanon<br />
-          - Diana Nguyen<br />
-          - Lucas Isambert<br />
-          - Saad Ichkarran<br />
-          <br /><br />
-        </Typography>
+        <Box sx={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-start" }}>
+          <Typography sx={{ ...TitleStyles.sectionTitle, marginBottom: 2 }}>
+            About Chromo Team
+          </Typography>
+          <Typography sx={{ ...BodyTextStyles.descriptionText }}>
+            The Chromo team is a team of 4 students at the Paris-Villejuif EPITA campus. Its members are :<br />
+            - Dante Zanon<br />
+            - Diana Nguyen<br />
+            - Lucas Isambert<br />
+            - Saad Ichkarran<br />
+            <br /><br />
+          </Typography>
+        </Box>
+        <Box sx={{ flex: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img src={team} style={{ 
+            height: '100%',
+            width: 'auto',
+            maxHeight: '800px'
+          }} alt="Team"/>
+        </Box>
       </Box>
 
       {/* Box 2: Game Idea */}
