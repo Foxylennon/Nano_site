@@ -20,7 +20,7 @@ There are **four surgeons** in total who participate together in the same operat
       },
       {
         id: 'movement',
-        title: 'Bouger le chirurgien',
+        title: 'Chrom',
         content: `# Chrom
         
 Chrom is a mysterious merchant who originates from **within the patient's body itself**. He appears only after you have saved him during the operation.
@@ -108,8 +108,19 @@ Clots are slow but very tough. They take significantly more damage to destroy co
       {
         id: 'settings',
         title: 'Proteins',
-        content: `# protein
-        `
+        content: `# Chrom's proteins
+
+After being rescued by the surgeon, Chrom sets up his shop inside the patient's body. He offers various products to help the surgeon in the mission, including four special **proteins** that provide powerful buffs.
+
+## Proteins
+
+Each protein grants a unique benefit to the surgeon:
+
+> **Antibody:** Buffs your attack damage, making your surgical tools more effective against diseases.  
+> **Lactase:** Increases your movement speed, allowing you to dodge enemy attacks and navigate the body more quickly.  
+> **Hemoglobin:** Heals the surgeon, restoring a portion of your current health.  
+> **Collagen:** Increases your maximum HP, letting you survive longer in dangerous areas.
+`
       }
     ]
   },
@@ -119,7 +130,16 @@ Clots are slow but very tough. They take significantly more damage to destroy co
       {
         id: 'lore',
         title: 'Nano universe',
-        content: `# GStory blablablek
+        content: `# A bit of context
+## How did we get here?
+
+In the near future, humanity has developed advanced technologies for resizing objects and matter, including full-scale miniaturization. Initially designed for industrial and scientific purposes, this technology is quickly adopted by the medical sector, particularly by **Hospital 67**, a pioneer in its medical application.
+
+Thanks to miniaturization, medical staff can intervene directly **inside the patient's body**, targeting treatment areas with extreme precision and greatly reducing the risks associated with major surgeries. However, these medical missions turn out to be far more complex than anticipated, transforming every operation into a high-risk exploration.
+
+Surgeons perform their operations by miniaturizing themselves inside a **clyster** (enema), which is then injected directly into the patient's rectum. Once inside, they travel through blood vessels and organs, treating the patient by navigating this dangerous internal landscape and eliminating diseases that threaten the patient's life.
+
+Every mission is a journey into the unknown, where the smallest mistakes can have fatal consequences — both for the patient and for the miniature surgical team.
         `
       }
     ]
