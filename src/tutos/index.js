@@ -5,15 +5,9 @@ export const tutorialsData = [
       {
         id: 'getting-started',
         title: 'Getting Started',
-        content: `# Getting Started with Nano
-
-## Launching Your First Mission
+        content: `# Launching Your First Mission
 
 Welcome to Nano! This guide will help you understand the basics and get started with your first surgical mission.
-
-### What is Nano?
-
-Nano is a unique 2D roguelike action game where you play as a microscopic surgeon inside the human body. Your mission is to eliminate diseases and threats while navigating through the complex biological systems.
 
 ## Controls
 
@@ -35,6 +29,8 @@ When you start a new game, you'll be placed in the **Bloodstream Zone**. This is
 - How to move and interact with your environment
 - Basic combat mechanics
 - How to cooperate with Chrom
+
+Next areas are located on each side center, so the real operation start there >v>
 
 ## Tips for Success
 
@@ -149,10 +145,13 @@ Multiplayer mode transforms Nano into a cooperative surgical experience where yo
 - Minimum 60 FPS for smooth gameplay
 - Voice communication (optional but recommended)
 
-### Before Starting
+### Setting up the multiplayer mode
 
+0. **MAKE SURE EVERY PLAYERS ARE ON THE SAME WIFI NETWORK**
 1. **Create a game**: Click "Create Game"
 2. **Invite players**: Share ip address code
+
+**Up to 4 players** can be in the same team.
 
 ## In-Game Cooperation
 
@@ -162,13 +161,6 @@ All players work toward the same goals:
 - Reach safe zones
 - Protect vital organs
 - Complete timed challenges
-
-### Team Success
-
-**Loot Distribution**
-- Defeated enemies drop rewards (such as glucoins)
-- Auto-distribute or vote-based systems
-- Share powerful items with frontline fighters
 
 ## Multiplayer Tips
 
